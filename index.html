@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Matemática Divertida
+  </title>
+  <link rel="shortcut icon" href="http://icons.iconarchive.com/icons/icojam/blue-bits/256/math-add-icon.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header>
+    <img height="110px" src="imagenes\imagen1.png" />
+  </header>
+  <div id="index"><br><br>
+    <h1>Bienvenidos a Matemática Divertida</h1><br>
+    <form>
+      <h2>Ingrese un nombre de usuario</h2>
+      <input name="insertarname" type="text" placeholder="nombre" class="forma"><br><br>
+      <button type="button" onclick="mostrarname(insertarname)">
+        Enviar </button>
+    </form>
+  </div>
+
+  <div id="seleccion-tema"><br>
+    <form>
+      <h1 id="mensajename"> </h1>
+      <h2> En que tema de Matemática deseas medir tus conocimietos</h2>
+      <input type="radio" name="select1" value="geometria"> Geometría<br>
+      <input type="radio" name="select1" value="problema"> Problemas<br><br>
+      <button type="button" onclick="iratematica(select1)">
+        Seleccionar
+      </button><br><br>
+      <button type="button" onclick="volver()">
+        Volver </button>
+    </form>
+  </div>
+
+  <div id="geometria"><br><br>
+    <form>
+      <h2>Ejercicios de Geometría</h2>
+      <p> 1- Un triangulo equilatero tiene:</p>
+      <input type="radio" name="select1" value="correcta"> Tres lados iguales<br>
+      <input type="radio" name="select1" value="incorrecta"> Dos lados iguales<br>
+      <input type="radio" name="select1" value="incorrecta"> Una angulo recto<br><br>
+
+      <p>2- Cuantos lados tiene un hexagono:</p>
+      <input type="radio" name="select2" value="incorrecta"> 5 lados<br>
+      <input type="radio" name="select2" value="correcta"> 6 lados<br>
+      <input type="radio" name="select2" value="incorrecta"> 8 lados<br><br>
+
+      <p>3- Si el radio de un circulo mide 10 cm, cuanto mide su diametro:</p>
+      <input type="radio" name="select3" value="incorrecta"> 50 cm<br>
+      <input type="radio" name="select3" value="correcta"> 20 cm<br>
+      <input type="radio" name="select3" value="incorrecta"> 30 cm<br><br>
+
+      <button type="button" onclick="guardarresulatdogeometria(select1,select2,select3)">
+        Enviar Respuestas </button>
+      <button type="button" onclick="volver1()">
+        Volver </button>
+    </form>
+    <br><br>
+  </div>
+
+  <div id="problemas"><br><br>
+    <form>
+      <h2> Ejercios de Problemas</h2>
+      <p> 1- Juan tiene 18 años, Marcos tiene 5 mas que Juan y Pepito tiene 3 menos que Juan. Que edad tiene Pepito</p>
+      <input type="radio" name="select1" value="incorrecta"> 20 años <br>
+      <input type="radio" name="select1" value="correcta"> 15 años<br>
+      <input type="radio" name="select1" value="incorrecta"> 13 años<br><br>
+
+      <p>2- Que distancia recorre un coche en 3 horas, si va a una velocidad de 50km/h</p>
+      <input type="radio" name="select2" value="incorrecta">300 km<br>
+      <input type="radio" name="select2" value="incorrecta"> 100 km<br>
+      <input type="radio" name="select2" value="correctas"> 150 km<br><br>
+
+      <p>3- Cuantas flores hay un un ramo de dos docenas</p>
+      <input type="radio" name="select3" value="correcta">24 flores<br>
+      <input type="radio" name="select3" value="incorrecta">10 flores<br>
+      <input type="radio" name="select3" value="correcta">15 flores<br><br>
+
+      <button type="button" onclick="guardarresulatdoproblemas(select1,select2,select3)">
+        Enviar Respuestas </button>
+      <button type="button" onclick="volver2()">
+        Volver </button>
+    </form><br><br>
+  </div>
+
+  <div id="resultado"><br><br>
+    <h2 id="respuesta1"> </h2>
+    <h2 id="respuesta2"></h2>
+    <h2 id="respuesta3"></h2>
+
+    <button type="button" onclick="volver3()">
+      Volver a jugar </button>
+
+    <button type="button" onclick="volver4()">
+      Cambiar jugador </button>
+  </div>
+  <div id="seleccione"><br><br>
+    <h1>Por favor seleccione una opcion</h1>
+    <button type="button" onclick="volver7()">
+      OK </button>
+  </div>
+  <div id="seleccione1"><br><br>
+    <h1>Por favor responder todas las preguntas</h1>
+    <button type="button" onclick="volver5()">
+      OK </button>
+  </div>
+  <div id="seleccione2"><br><br>
+    <h1>Por favor responder todas las preguntas</h1>
+    <button type="button" onclick="volver6()">
+      OK </button>
+  </div>
+  <script type="text/javascript" src="app.js"> </script>
+</body>
+
+</html>

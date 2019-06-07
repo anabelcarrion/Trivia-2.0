@@ -1,0 +1,88 @@
+body {
+  font-size: 20px;
+  background-color: #3399ff;
+  font-family: sans-serif;
+  text-align: center;
+  color: white;
+}
+
+header {
+  position: relative;
+  top: 40px;
+}
+
+h1 {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+form {
+  color: white;
+  text-align: center;
+}
+
+.forma {
+  border-radius: 5px;
+  width: 210px;
+  height: 25px;
+}
+
+a,
+button {
+  font-family: sans-serif;
+  text-decoration: none;
+  padding: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #1883ba;
+  border-radius: 6px;
+  border: 2px solid #0016b0;
+}
+
+#index {
+  display: block;
+  /*mostrar*/
+}
+
+#seleccion-tema {
+  display: none;
+  /*ocultar*/
+}
+
+#geometria {
+  display: none;
+  /*ocultar*/
+}
+
+#problemas {
+  display: none;
+  /*ocultar*/
+}
+
+#resultado {
+  display: none;
+  /*ocultar*/
+}
+
+#seleccione {
+  display: none;
+  /*ocultar*/
+}
+
+#seleccione1 {
+  display: none;
+  /*ocultar*/
+}
+
+#seleccione2 {
+  display: none;
+  /*ocultar*/
+}
